@@ -1,7 +1,6 @@
 var points = 0;
 
 var questions = document.querySelector("form");
-//alert(questions.childNodes.length);
 
 questions.childNodes[3].setAttribute("id","q1");
 questions.childNodes[27].setAttribute("id","q2");
@@ -32,13 +31,10 @@ var temp3 = document.querySelector("#temp3");
 var temp4 = document.querySelector("#temp4");
 
 function numberOfpoints(){
-	var questions = document.querySelector("form");
-	var temp = questions.lastChild;
-	//questions.removeChild(temp);
 	points = 0;
 	if(firstResponse.checked == true) {
 		points += 1;
-		//document.questions.removeChild(temp);
+		
 	}
 	if(secondResponse.checked == true){
 		points += 1;
@@ -99,7 +95,4 @@ function numberOfpoints(){
 	}
 	document.querySelector(".ok").onclick = remResult;
 }
-
-//document.querySelector(".ok").onclick = remResult;
-//alert(document.querySelector(".ok"));
 document.querySelector(".result").onclick = numberOfpoints;
