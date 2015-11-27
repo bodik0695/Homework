@@ -71,8 +71,12 @@ function numberOfpoints(){
 		|| sixthResponse.checked && seventhResponse.checked && temp4.checked == true){
 		points -= 0.5;
 	}
+	
 	function createMessage(title, body) {
-		parentElem = "";
+		var temp = document.querySelector("form");
+		var div = temp.querySelector("div");
+		if(div === null){
+		
          var container = document.createElement("div");
          container.innerHTML = "<div class='message'> \
          <h2>" + title + "</h2> \
@@ -80,16 +84,18 @@ function numberOfpoints(){
          <input class='ok' type='button' value='OK'> \
          </div>";
          return container.firstChild;
-      }
+		}
+		else{}
+     }
 	var testResult = createMessage("Результат теста","Вы набрали баллов: " + points + " из 5");
 	var parentElem = document.querySelector("form");
-   parentElem.insertBefore(testResult, parentElem.lastChild);
+   parentElem.insertBefore(testResult, parentElem.firstChild);
 	//alert("Вы набрали баллов: " + points + " из 5")
 	function remResult(){
 		var temp = document.querySelector("form");
-		var div = document.querySelector("div");
+		var div = temp.querySelector("div");
 		temp.removeChild(div);
-	}
+	}  
 	document.querySelector(".ok").onclick = remResult;
 }
 document.querySelector(".result").onclick = numberOfpoints;

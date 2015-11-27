@@ -144,14 +144,15 @@ a:hover {
 	color: blue;
 }
 .message {
-	margin: auto;
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 15%;
    width: 300px;
    border: 1px solid gray;
    text-align: center;
 }
 .message h2 {
    text-align: center;
-   /*background: azure;*/
 	background: linear-gradient(to top, rgba(30,87,153,0), rgba(30,87,153,0.8), 
 	rgba(30,87,153,1), rgba(30,87,153,1), rgba(41,137,216,1), rgba(30,87,153,1), 
 	rgba(30,87,153,1), rgba(30,87,153,0.8), rgba(30,87,153,0)); 
