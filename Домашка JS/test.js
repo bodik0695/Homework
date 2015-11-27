@@ -48,15 +48,13 @@ function numberOfpoints(){
 	if(fourthResponse.checked || fifthResponse.checked == true){
 		points += 0.5;
 	}
-	if(temp1.checked && fourthResponse.checked && temp2.checked == true){
-		points -= 0.5;
-	}
-	if(temp1.checked && fifthResponse.checked && temp2.checked == true){
+	if(temp1.checked && fourthResponse.checked && temp2.checked
+		|| temp1.checked && fifthResponse.checked && temp2.checked == true){
 		points -= 0.5;
 	}
 	if(fourthResponse.checked && fifthResponse.checked && temp1.checked 
-	|| fourthResponse.checked && fifthResponse.checked && temp2.checked == true){
-		points -= 1;
+		|| fourthResponse.checked && fifthResponse.checked && temp2.checked == true){
+		points -= 0.5;
 	}
 	if(sixthResponse.checked && seventhResponse.checked == true){
 		points += 0.5;
@@ -64,15 +62,14 @@ function numberOfpoints(){
 	if(sixthResponse.checked || seventhResponse.checked == true){
 		points += 0.5;
 	}
-	if(temp3.checked && sixthResponse.checked && temp4.checked == true){
+	if(temp3.checked && sixthResponse.checked && temp4.checked 
+		|| temp3.checked && seventhResponse.checked && temp4.checked == true){
 		points -= 0.5;
 	}
-	if(temp3.checked && seventhResponse.checked && temp4.checked == true){
-		points -= 0.5;
-	}
+
 	if(sixthResponse.checked && seventhResponse.checked && temp3.checked 
-	|| sixthResponse.checked && seventhResponse.checked && temp4.checked == true){
-		points -= 1;
+		|| sixthResponse.checked && seventhResponse.checked && temp4.checked == true){
+		points -= 0.5;
 	}
 	function createMessage(title, body) {
 		parentElem = "";
