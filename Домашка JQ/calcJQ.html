@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Калькулятор</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <link rel="stylesheet" href="style_for_homework.css" />
+	  <script src="jquery-2.1.4.js"></script>
+   </head>
+   <body>
+		<header>
+			<a href="index.html"><img src="webLogo.png" alt="Основы Web-технологий" height="100" /></a>
+			<h1>Основы Web-технологий</h1>
+			<nav class="nav" >
+				<ul>
+					<li class="li rel" ><a href="index.html">Главная</a></li>
+					<li class="li rel" ><a href="web.html" >Web-технологии</a>
+						<ul class="ul" >
+							<li class="list" ><a href="htm.html"  >HTML5</a></li>
+							<li class="list" ><a href="css.html"  >CSS3</a></li>
+							<li class="list" ><a href="js.html" >JavaScript</a></li>
+						</ul>
+					</li>
+					<li class="li" ><a href="calcJQ.html">Калькулятор</a></li>
+					<li class="li" ><a href="testJq.html">Тест</a></li>
+				</ul>
+			</nav>
+		</header>
+		<form>
+			<table>
+				<tr>
+					<td colspan="5"> 
+						<input id="scr" class="screen" dir="ltl" type="text" name="text" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input id="7" type="button" name="buttonSeven" value="7" />
+					</td>
+					<td>
+						<input id="8" type="button" name="buttonEight" value="8" />
+					</td>
+					<td>
+						<input id="9" type="button" name="buttonNine" value="9" />
+					</td>
+					<td>
+						<input id="/" type="button" name="buttonDivide" value="/" />
+					</td>
+					<td>
+						<input id="C" type="button"  name="delete" value="C" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input id="4" type="button" name="buttonFour" value="4" />
+					</td>
+					<td>
+						<input id="5" type="button" name="buttonFive" value="5" />
+					</td>
+					<td>
+						<input id="6" type="button" name="buttonSix" value="6" />
+					</td>
+					<td>
+						<input  id="*" type="button"name="buttonMultiply" value="*" />
+					</td>
+					<td>
+						<input id="+-" class="=-" type="button" name="buttonPlusMinus" value="&plusmn;" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input id="1" type="button" name="buttonOne" value="1" /> 
+					</td>
+					<td>
+						<input id="2" type="button" name="buttonOTwo" value="2" />
+					</td>
+					<td>
+						<input id="3" type="button" name="buttonOThree" value="3" />
+					</td>
+					<td>
+						<input id="-" type="button" name="buttonMinus" value="-" />
+					</td>
+					<td rowspan="2">
+						<input class="equal" id="=" type="button" name="buttonEqual" value="=" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input class="zero" id="0" type="button" name="buttonZero" value="0" />
+					</td>
+					<td>
+						<input type="button" id="." name="buttonPoint" value="." />
+					</td>
+					<td>
+						<input type="button" id="+" name="plus" value="+" />
+					</td>
+				</tr>
+			</table>
+		</form>
+		<footer>
+			<address>
+				<a href="#">Пишите: mail@mail</a><br />
+			</address>
+			<div> &copy; Фамилия И.О., год</div>
+		</footer>
+		 <script src="calcJq.js"></script>
+   </body>
+</html>
